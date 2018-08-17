@@ -1,0 +1,18 @@
+<ActionBar title="Crea una cuenta" class="action-bar">
+</ActionBar>
+<FlexboxLayout class="Registration-form" flexDirection="column" alignItems="center">
+
+    <Label [text]="error"></Label>
+
+    <Label text="Email"></Label>
+    <Textfield keyboardType="email" name="email" [(ngModel)]="email"></Textfield>
+
+    <Label text="Password"></Label>
+    <Textfield secure="true" name="password" [(ngModel)]="password"></Textfield>
+
+    <Label text="Confirma tu Password"></Label>
+    <Textfield secure="true" name="confirmPassword" [(ngModel)]="confirmPassword"></Textfield>
+
+    <!-- Tap es un evento de nativescript -->
+    <Button text="Crear cuenta nueva" class="btn-flat" (tap)="signUp()"></Button>
+</FlexboxLayout>

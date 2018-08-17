@@ -1,0 +1,25 @@
+<ActionBar title="Crealo Digital" class="action-bar">
+</ActionBar>
+
+<!-- <StackLayout>
+    <Label text="Email"></Label>
+    <Textfield></Textfield>
+
+    <Label text="Password"></Label>
+    <Textfield hint="Al menos 6 caracteres"></Textfield>
+
+    <Button text="Ingresar" class="action-bar"></Button>
+    <Button text="Crear cuenta nueva" class="btn-flat" (tap)="goToSignUp()"></Button>
+</StackLayout> -->
+
+<FlexboxLayout class="Registration-form" flexDirection="column" alignItems="center">
+    <Label text="Email"></Label>
+    <Textfield keyboardType="email"></Textfield>
+
+    <Label text="Password"></Label>
+    <Textfield secure="true"></Textfield>
+
+    <Button text="Ingresar" class="action-bar"></Button>
+    <!-- Tap es un evento de nativescript -->
+    <Button text="Crear cuenta nueva" class="btn-flat" (tap)="goToSignUp()"></Button>
+</FlexboxLayout>
